@@ -19,3 +19,13 @@ int full(stack* S){
 int empty(stack* S){
   return (S->count == 0 ); // oper pop
 }
+
+void pop(stack* S, ItemType* X){
+  if(S->count==0){
+    cout << "none stack" << endl;
+  }
+  else{
+    --(S->count);
+    *X = S->item[S->count];
+  }
+}
