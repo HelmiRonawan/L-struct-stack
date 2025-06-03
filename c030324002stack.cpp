@@ -41,3 +41,17 @@ void push(ItemType x, stack* S){
   }
   
 }
+
+int main(){
+  stack nilai;
+  ItemType x;
+
+  InitializeStack(&nilai);
+  full(&nilai);
+  push(10,&nilai);
+  push(20,&nilai);
+  push(30,&nilai);
+  push(40,&nilai);
+  push(50,&nilai); //ini akan masuk
+  push(60,&nilai); // tidak akan masuk
+  }
