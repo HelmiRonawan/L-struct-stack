@@ -11,3 +11,11 @@ typedef struct{
 void InitializeStack(stack* S){
   S->count = 0;
 }
+
+int full(stack* S){
+  return (S ->count == MAX); // oper push
+}
+
+int empty(stack* S){
+  return (S->count == 0 ); // oper pop
+}
