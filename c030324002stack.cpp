@@ -29,3 +29,15 @@ void pop(stack* S, ItemType* X){
     *X = S->item[S->count];
   }
 }
+
+void push(ItemType x, stack* S){
+  if (S->count == MAX)
+  {
+    cout << "the stack is full" << endl;
+  }
+  else{
+    S->item[S->count] = x;
+    ++(S->count);
+  }
+  
+}
